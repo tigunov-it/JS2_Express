@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eShop</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+<div id="app">
+    <header>
+        <div class="logo">eShop</div>
+
+        <div class="filter">
+            <filter-el></filter-el>
+        </div>
+
+        <div class="cart">
+
+            <cart ref="cart"></cart>
+
+        </div>
+    </header>
+    <main>
+        <error ref="error"></error>
+        <products ref="products"> </products>
+    </main>
+</div>
+
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/ProductComponent.js"></script>
+<script src="js/CartComponent.js"></script>
+<script src="js/FilterComp.js"></script>
+<script src="js/ErrorComp.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
