@@ -2,39 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>eShop</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="container">
-<div id="app">
-    <header>
-        <div class="logo">eShop</div>
+<body>
 
-        <div class="filter">
-            <filter-el></filter-el>
-        </div>
+    <div id="app">
+        <header>
+            <header-comp :cartitems="cartGoods" @filtergoods='filterGoods' @addproduct='addProduct'></header-comp>
+        </header>
+        <main>
+            <products-comp :showed='showedProducts' @addproduct='addProduct' @remove='remove'></products-comp>
+        </main>
+    </div>
 
-        <div class="cart">
-
-            <cart ref="cart"></cart>
-
-        </div>
-    </header>
-    <main>
-        <error ref="error"></error>
-        <products ref="products"> </products>
-    </main>
-</div>
-
-<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
-        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="js/ProductComponent.js"></script>
-<script src="js/CartComponent.js"></script>
-<script src="js/FilterComp.js"></script>
-<script src="js/ErrorComp.js"></script>
-<script src="js/main.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
