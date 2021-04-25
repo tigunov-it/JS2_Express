@@ -1,0 +1,32 @@
+[
+  {
+    "id_product": 124,
+    "product_name": "Грабли",
+    "price": 1000,
+    "img": "./img/grabli.png"
+  },
+  {
+    "id_product": 457,
+    "product_name": "Конский навоз",
+    "price": 300,
+    "img": "./img/konskinavoz.png"
+  },
+  {
+    "id_product": 123,
+    "product_name": "Лопата",
+    "price": 950,
+    "img": "./img/lopata.png"
+  },
+  {
+    "id_product": 456,
+    "product_name": "Семена",
+    "price": 100,
+    "img": "./img/semena.png"
+  },
+  {
+    "id_product": 458,
+    "product_name": "Коровий навоз",
+    "price": 330,
+    "img": "./img/korovinavoz.png"
+  }
+]

@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100px;
+  background-color: blueviolet;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.head {
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.btn-cart {
+  padding: 5px 10px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact_us {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.form button {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  margin: 0 auto;
+}
+
+.product-item {
+  width: 310px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  border: 1px solid #cccccc;
+}
+.product-item:hover {
+  box-shadow: 12px 13px 22px 6px rgba(34, 60, 80, 0.15);
+}
+
+.product_img {
+  width: 100%;
+  height: 200px;
+}
+
+.product_info {
+  color: blue;
+  font-size: large;
+  margin-top: 20px;
+  border-top: 1px solid #cccccc;
+}
+
+.buy-btn {
+  width: 309px;
+  height: 50px;
+  margin-top: 10px;
+  color: white;
+  background-color: darkslateblue;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.buy-btn:hover {
+  background-color: #4095c6;
+}
+
+.buy-btn:focus {
+  outline: none;
+}
+
+.cart {
+  width: 30vw;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 5px;
+  position: absolute;
+  top: 65%;
+  left: 65%;
+}
+
+.cart_item {
+  border: 1px solid grey;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.cart_item button {
+  align-self: center;
+  margin-right: 5px;
+  padding: 2px;
+}
+
+.cartData {
+  margin-left: 5px;
+}
+
+.cart_img {
+  width: 100px;
+  height: 50px;
+  align-self: center;
+}
+
+#cartPrice {
+  display: block;
+  margin-top: 15px;
+}
+
+.red {
+  border: 2px solid red;
+}
+
+.head_content {
+  display: flex;
+}
+
+.find_content {
+  margin-right: 20px;
+}
+
+.find_content input {
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=styles.css.map */
