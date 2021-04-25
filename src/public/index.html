@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>eShop</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <div id="app">
+        <header>
+            <header-comp :cartitems="cartGoods" @filtergoods='filterGoods' @addproduct='addProduct'></header-comp>
+        </header>
+        <main>
+            <products-comp :showed='showedProducts' @addproduct='addProduct' @remove='remove'></products-comp>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+<!--    <script src="./js/vue.js"></script>-->
+<!--    <script src="./js/header.js"></script>-->
+<!--    <script src="./js/products.js"></script>-->
+<!--    <script src="./js/main.js"></script>-->
+<!--    <script src="./js/bundle.js"></script>-->
+
+</body>
+</html>
